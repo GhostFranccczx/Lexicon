@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lexicon &mdash; Dictionary</title>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:wght@600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<header>
+  <div class="logo-line">
+    <h1>L<span>e</span>xicon</h1>
+  </div>
+  <p class="subtitle">English Dictionary</p>
+</header>
+
+<div class="search-section">
+  <div class="search-wrap">
+    <input type="text" id="word-input" placeholder="Search a word&hellip;" autocomplete="off" spellcheck="false" />
+    <button id="search-btn" type="button">Look Up</button>
+  </div>
+  <div class="suggestions" aria-label="Suggested words">
+    <button class="suggestion-chip" type="button" data-word="serendipity">serendipity</button>
+    <button class="suggestion-chip" type="button" data-word="ephemeral">ephemeral</button>
+    <button class="suggestion-chip" type="button" data-word="luminous">luminous</button>
+  </div>
+</div>
+
+<div id="result-area"></div>
+
+<footer>Powered by the Free Dictionary API &mdash; dictionaryapi.dev</footer>
+</body>
+</html>
